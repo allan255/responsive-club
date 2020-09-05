@@ -1,0 +1,389 @@
+/* Universal styling */
+
+html {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    /* font-family: 'MuseoModerno', cursive; */
+    font-family: 'Lato', sans-serif;
+    margin: 0 5%;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid lightslategray;
+    margin-top: 3rem;
+    margin-bottom: 1.25rem;
+    max-width: 50rem;
+}
+
+p, blockquote {
+    text-indent: 2rem;
+}
+
+.right {
+    float: right;
+}
+
+h1 {
+    font-family: 'MuseoModerno', cursive;
+}
+
+h2 {
+    text-align: center;
+}
+
+li a:hover, .pureBlue:hover .manuBtn {
+    background-color: #009bd9;
+}
+
+li a:hover, .pureYellow:hover .manuBtn {
+    background-color: #fccf00;
+}
+
+li a:hover, .darkLimeG:hover .manuBtn {
+    background-color: #44af35;
+}
+li a:hover, .red:hover .manuBtn{
+    background-color: red;
+}
+
+li a:hover, .white:hover{
+    background-color: white;
+}
+/* style for the manu list */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    transition: all 0.3s ease;
+    font-family: 'MuseoModerno', cursive;    
+}
+
+li {
+    float: left;
+}
+
+li a, .manuBtn {
+    display: inline-block;
+    color: black;
+    padding: 0.75rem;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* manu effects */
+
+.home {
+    background-color: red;
+}
+
+/* li a:hover, .dropdownManu:hover .manuBtn {
+    background-color: red;
+} */
+
+.manu li .dropdownManu {
+    display: inline-block;
+}
+
+/* manu dropdown contents */
+
+.manuContent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.manuContent a {
+    color: black;
+    padding: 1rem;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* change color for dropdown item when hover */
+
+.manuContent a:hover {
+    background-color: #f1f1f1;  
+}
+
+.dropdownManu:hover .manuContent {
+    display: block;
+}
+
+/* styling for intro section */
+
+.intro {
+    background-image: url(../starting/images/ravi-palwe-eORjXplsnfs-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+.intro h1 {
+    font-size: 3.75rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    text-shadow: #000 0rem 0rem 6.25rem;
+}
+
+/* styling for quote */
+
+.testimonial {
+    margin: 0 auto;
+}
+
+.testimonial h2 {
+    text-align: center;
+    margin-top: 4rem;
+    text-transform: uppercase;
+
+}
+
+.testimonial p {
+    text-align: center;
+    color: lightslategray;
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+/* styling meet up section */
+
+.meetup {
+    margin: 0 auto;
+    display: inline-flex;
+    width: 100%;
+    height: fit-content;
+}
+
+.meetImg {
+    order: 1;
+    width: 45%;
+    float: left;
+    margin: 2.5rem;
+    object-fit: cover;
+}
+
+.meetText {
+    order: 2;
+    width: 49%;
+    text-align: left;
+    margin: 4.5rem 2.5rem;
+}
+
+.meetText a {
+    text-decoration: none;
+}
+
+.meetText .btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.btn-container .meetBtn {
+    padding: 0.65rem 1.25rem;
+    border-radius: 0.75rem;
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn-container .meetBtn:hover {
+    background-color: red;
+    color: white;
+}
+
+/* styling for game of the week section */
+
+.newGame h2 {
+    text-align: center;
+}
+
+.game-container .gameList li a{
+   max-width: 157px;
+   /* display: inline-block; */
+   float: left;
+   margin-top: 4%;
+   line-height: 1.2;
+   margin-right: 4%;
+}
+
+.gameList h3 {
+    font-size: 1rem;
+    /* width: 60%; */
+    padding: 8px 0 2px;
+}
+
+.gameList li a:hover {
+    text-decoration: none;
+}
+
+.gameImg {
+    max-height: 195px;
+}
+
+/* about us */
+
+.aboutus {
+    margin: 0 auto;
+    display: inline-flex;
+    width: 100%;
+    height: fit-content;
+    
+}
+
+.aboutText {
+    width: 45%;
+    text-align: left;
+    margin: 2.5rem 1.5rem;   
+}
+
+.aboutText h2 {
+    text-align: center;
+}
+
+.aboutText p {
+    line-height: 1.25rem;
+}
+
+.aboutImg {    
+    width: 45%;
+    float: right;
+    margin: 2.5rem;
+    object-fit: cover;   
+}
+
+/* styling for contact us */
+
+.contactUs {
+    margin: 0 auto;    
+    width: 100%;
+    height: fit-content;
+}
+
+.contactUs h3 {
+    text-align: center;
+}
+
+.multimedia {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 0.5rem;
+}
+
+.ssMedia {
+    margin: 0 1rem;
+}
+
+.contactItem {
+    display: inline-flex;
+    align-items: center;
+    
+}
+/* socail media icon */
+a .multimedia:hover {
+    width: 35px;
+    height: 35px;
+}
+
+/* styling for footer */
+
+.footnote p {
+    font-size: 0.75rem;
+    font-style: italic;
+    text-align: center;
+}
+
+/* responsive styling */
+
+@media only screen and (max-width: 780px) {
+
+    h2 {
+        text-align: left;
+    }
+      
+    ul li, .right {
+      float: none;    
+      }
+    
+    .dropdownManu:hover .manuContent {
+      display: inline-block;    
+      float: right;    
+    }
+
+    .aboutus {
+        display: block;
+        margin: 0;
+    }
+
+    .aboutus .aboutText {
+        width: 95%;
+        text-align: left;
+        margin: 0 auto;
+    }
+      
+    .aboutText p {
+        line-height: 1.25rem;
+    }
+    
+    .aboutus .aboutImg {
+        width: 100%;
+        /* display: block; */
+        float: none;
+        margin: 0;
+        margin-top: 2.5rem;
+        
+    }
+
+    .meetup {
+        display: block;
+        margin: 0;
+    }
+
+    .meetup .meetText {
+        order: 1;
+        width: 95%;
+        text-align: left;
+        display: block;
+        margin: 0 auto;
+    }
+      
+    .meetText p {
+        line-height: 1.25rem;
+    }
+    
+    .meetup .meetImg {
+        order: 2;
+        width: 100%;
+        display: block;
+        /* float: none; */
+        margin: 0;
+        margin-top: 2.5rem;        
+    }
+
+    .contactItem {
+        display: block;
+        align-items: left;
+        
+    }
+  }

@@ -1,0 +1,1 @@
+This is a website project from codecademy for responsive website for a local club.
